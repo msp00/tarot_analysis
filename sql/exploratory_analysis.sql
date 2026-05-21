@@ -45,7 +45,7 @@ SELECT
   SUM(CASE WHEN draw_date IS NULL THEN 1 ELSE 0 END) AS missing_draw_date
 FROM tarot_draws;
 
--- Note: I identified and removed a row in which no draw occurred on 10-14-2025, which will permit accurate analysis
+-- Note: I identified and removed a row in which no draw occurred on 10-14-2025.
 
 ---------------------------------------------------
 
@@ -394,7 +394,6 @@ WHERE d1.card_id = d2.card_id;
 -- | Judgement          | 152       | 2025-10-19  | 153       | 2025-10-20  |
 -- | Nine of Pentacles  | 160       | 2025-10-27  | 161       | 2025-10-28  |
 
-
--- Note, there was no draw on 10-14-2025, which is why the Empress appears in consecutive draws on 10-13 and 10-15. I removed the row for 10-14 to maintain accurate analysis, so this is not a data integrity issue but rather a quirk of the dataset.
+-- Note, there was no draw on 10-14-2025, which is why the Empress appears in consecutive draws on 10-13 and 10-15.
 
 
