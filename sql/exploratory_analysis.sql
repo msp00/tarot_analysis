@@ -45,7 +45,7 @@ SELECT
   SUM(CASE WHEN draw_date IS NULL THEN 1 ELSE 0 END) AS missing_draw_date
 FROM tarot_draws;
 
--- Note: I identified and removed a row in which no draw occurred on 10-14-2025, which will permit accurate time-based analysis
+-- Note: I identified and removed a row in which no draw occurred on 10-14-2025, which will permit accurate analysis
 
 ---------------------------------------------------
 
@@ -365,7 +365,7 @@ ORDER BY COUNT(*) DESC;
 
 -- Do any cards appear in consecutive draws?
 
-SELECT c.card_name, d1.id AS draw_id, d1.draw_date AS draw_date_1, d2.id AS draw_id_2, d2.draw_date AS draw_date_2
+SELECT c.card_name, d1.id AS draw_id_1, d1.draw_date AS draw_date_1, d2.id AS draw_id_2, d2.draw_date AS draw_date_2
 FROM tarot_draws d1
 JOIN tarot_draws d2
 ON d2.id = d1.id + 1
@@ -373,27 +373,28 @@ JOIN tarot_cards c
 ON d1.card_id = c.id
 WHERE d1.card_id = d2.card_id;
 
--- | card_name          | draw_id | draw_date_1 | draw_id_2 | draw_date_2 |
--- | ------------------ | ------- | ----------- | --------- | ----------- |
--- | Seven of Pentacles | 18      | 2025-06-06  | 19        | 2025-06-07  |
--- | Six of Pentacles   | 26      | 2025-06-14  | 27        | 2025-06-15  |
--- | The Magician       | 32      | 2025-06-20  | 33        | 2025-06-21  |
--- | Four of Pentacles  | 39      | 2025-06-27  | 40        | 2025-06-28  |
--- | Page of Pentacles  | 51      | 2025-07-09  | 52        | 2025-07-10  |
--- | The Star           | 63      | 2025-07-21  | 64        | 2025-07-22  |
--- | King of Swords     | 86      | 2025-08-13  | 87        | 2025-08-14  |
--- | The Tower          | 101     | 2025-08-28  | 102       | 2025-08-29  |
--- | The World          | 107     | 2025-09-03  | 108       | 2025-09-04  |
--- | Five of Pentacles  | 122     | 2025-09-18  | 123       | 2025-09-19  |
--- | Seven of Pentacles | 124     | 2025-09-20  | 125       | 2025-09-21  |
--- | The Star           | 126     | 2025-09-22  | 127       | 2025-09-23  |
--- | Five of Pentacles  | 129     | 2025-09-25  | 130       | 2025-09-26  |
--- | Eight of Pentacles | 132     | 2025-09-28  | 133       | 2025-09-29  |
--- | Four of Wands      | 139     | 2025-10-05  | 140       | 2025-10-06  |
--- | The Empress        | 147     | 2025-10-13  | 148       | 2025-10-15  |
--- | Judgement          | 152     | 2025-10-19  | 153       | 2025-10-20  |
--- | Nine of Pentacles  | 160     | 2025-10-27  | 161       | 2025-10-28  |
+-- | card_name          | draw_id_1 | draw_date_1 | draw_id_2 | draw_date_2 |
+-- | ------------------ | --------- | ----------- | --------- | ----------- |
+-- | Seven of Pentacles | 18        | 2025-06-06  | 19        | 2025-06-07  |
+-- | Six of Pentacles   | 26        | 2025-06-14  | 27        | 2025-06-15  |
+-- | The Magician       | 32        | 2025-06-20  | 33        | 2025-06-21  |
+-- | Four of Pentacles  | 39        | 2025-06-27  | 40        | 2025-06-28  |
+-- | Page of Pentacles  | 51        | 2025-07-09  | 52        | 2025-07-10  |
+-- | The Star           | 63        | 2025-07-21  | 64        | 2025-07-22  |
+-- | King of Swords     | 86        | 2025-08-13  | 87        | 2025-08-14  |
+-- | The Tower          | 101       | 2025-08-28  | 102       | 2025-08-29  |
+-- | The World          | 107       | 2025-09-03  | 108       | 2025-09-04  |
+-- | Five of Pentacles  | 122       | 2025-09-18  | 123       | 2025-09-19  |
+-- | Seven of Pentacles | 124       | 2025-09-20  | 125       | 2025-09-21  |
+-- | The Star           | 126       | 2025-09-22  | 127       | 2025-09-23  |
+-- | Five of Pentacles  | 129       | 2025-09-25  | 130       | 2025-09-26  |
+-- | Eight of Pentacles | 132       | 2025-09-28  | 133       | 2025-09-29  |
+-- | Four of Wands      | 139       | 2025-10-05  | 140       | 2025-10-06  |
+-- | The Empress        | 147       | 2025-10-13  | 148       | 2025-10-15  |
+-- | Judgement          | 152       | 2025-10-19  | 153       | 2025-10-20  |
+-- | Nine of Pentacles  | 160       | 2025-10-27  | 161       | 2025-10-28  |
 
--- Note, there was no draw on 10-14-2025, which is why the Empress appears in consecutive draws on 10-13 and 10-15. I removed the row for 10-14 to maintain accurate time-based analysis, so this is not a data integrity issue but rather a quirk of the dataset.
+
+-- Note, there was no draw on 10-14-2025, which is why the Empress appears in consecutive draws on 10-13 and 10-15. I removed the row for 10-14 to maintain accurate analysis, so this is not a data integrity issue but rather a quirk of the dataset.
 
 
