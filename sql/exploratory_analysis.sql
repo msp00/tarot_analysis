@@ -8,7 +8,6 @@
 
 SELECT COUNT(*) AS num_draws
 FROM tarot_draws;
-;
 
 -- | num_draws |
 -- | ----- |
