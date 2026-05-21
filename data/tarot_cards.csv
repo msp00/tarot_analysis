@@ -1,0 +1,79 @@
+id,card_name,element_id,chakra_id,arcana_type,suit_id,planet_id,card_rank
+0,The Fool,3,7,Major,null,8,null
+1,The Magician,1,2,Major,null,3,null
+2,The High Priestess,2,6,Major,null,2,null
+3,The Empress,1,4,Major,null,4,null
+4,The Emperor,4,3,Major,null,5,null
+5,The Hierophant,1,5,Major,null,4,null
+6,The Lovers,3,4,Major,null,3,null
+7,The Chariot,2,3,Major,null,2,null
+8,Strength,4,3,Major,null,1,null
+9,The Hermit,1,7,Major,null,7,null
+10,Wheel of Fortune,4,3,Major,null,6,null
+11,Justice,3,5,Major,null,4,null
+12,The Hanged Man,2,6,Major,null,9,null
+13,Death,2,1,Major,null,9,null
+14,Temperance,4,4,Major,null,6,null
+15,The Devil,1,1,Major,null,9,null
+16,The Tower,4,1,Major,null,5,null
+17,The Star,3,7,Major,null,8,null
+18,The Moon,2,6,Major,null,9,null
+19,The Sun,4,4,Major,null,1,null
+20,Judgement,4,7,Major,null,9,null
+21,The World,1,7,Major,null,7,null
+22,Ace of Wands,4,null,Minor,2,null,1
+23,Two of Wands,4,null,Minor,2,null,2
+24,Three of Wands,4,null,Minor,2,null,3
+25,Four of Wands,4,null,Minor,2,null,4
+26,Five of Wands,4,null,Minor,2,null,5
+27,Six of Wands,4,null,Minor,2,null,6
+28,Seven of Wands,4,null,Minor,2,null,7
+29,Eight of Wands,4,null,Minor,2,null,8
+30,Nine of Wands,4,null,Minor,2,null,9
+31,Ten of Wands,4,null,Minor,2,null,10
+32,Page of Wands,4,null,Minor,2,null,11
+33,Knight of Wands,4,null,Minor,2,null,12
+34,Queen of Wands,4,null,Minor,2,null,13
+35,King of Wands,4,null,Minor,2,null,14
+36,Ace of Cups,2,null,Minor,1,null,1
+37,Two of Cups,2,null,Minor,1,null,2
+38,Three of Cups,2,null,Minor,1,null,3
+39,Four of Cups,2,null,Minor,1,null,4
+40,Five of Cups,2,null,Minor,1,null,5
+41,Six of Cups,2,null,Minor,1,null,6
+42,Seven of Cups,2,null,Minor,1,null,7
+43,Eight of Cups,2,null,Minor,1,null,8
+44,Nine of Cups,2,null,Minor,1,null,9
+45,Ten of Cups,2,null,Minor,1,null,10
+46,Page of Cups,2,null,Minor,1,null,11
+47,Knight of Cups,2,null,Minor,1,null,12
+48,Queen of Cups,2,null,Minor,1,null,13
+49,King of Cups,2,null,Minor,1,null,14
+50,Ace of Swords,3,null,Minor,3,null,1
+51,Two of Swords,3,null,Minor,3,null,2
+52,Three of Swords,3,null,Minor,3,null,3
+53,Four of Swords,3,null,Minor,3,null,4
+54,Five of Swords,3,null,Minor,3,null,5
+55,Six of Swords,3,null,Minor,3,null,6
+56,Seven of Swords,3,null,Minor,3,null,7
+57,Eight of Swords,3,null,Minor,3,null,8
+58,Nine of Swords,3,null,Minor,3,null,9
+59,Ten of Swords,3,null,Minor,3,null,10
+60,Page of Swords,3,null,Minor,3,null,11
+61,Knight of Swords,3,null,Minor,3,null,12
+62,Queen of Swords,3,null,Minor,3,null,13
+63,King of Swords,3,null,Minor,3,null,14
+64,Ace of Pentacles,1,null,Minor,4,null,1
+65,Two of Pentacles,1,null,Minor,4,null,2
+66,Three of Pentacles,1,null,Minor,4,null,3
+67,Four of Pentacles,1,null,Minor,4,null,4
+68,Five of Pentacles,1,null,Minor,4,null,5
+69,Six of Pentacles,1,null,Minor,4,null,6
+70,Seven of Pentacles,1,null,Minor,4,null,7
+71,Eight of Pentacles,1,null,Minor,4,null,8
+72,Nine of Pentacles,1,null,Minor,4,null,9
+73,Ten of Pentacles,1,null,Minor,4,null,10
+74,Page of Pentacles,1,null,Minor,4,null,11
+75,Knight of Pentacles,1,null,Minor,4,null,12
+76,Queen of Pentacles,1,null,Minor,4,null,13
+77,King of Pentacles,1,null,Minor,4,null,14
